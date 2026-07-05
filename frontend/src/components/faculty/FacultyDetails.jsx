@@ -1,0 +1,1 @@
+// FacultyDetails component

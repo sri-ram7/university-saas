@@ -1,0 +1,1 @@
+// DepartmentCard component
