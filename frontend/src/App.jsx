@@ -1,14 +1,20 @@
+import { RouterProvider } from 'react-router-dom'
+import QueryProvider from '@/app/providers/QueryProvider'
+import { AuthProvider } from '@/app/providers/AuthProvider'
+import { ThemeProvider } from '@/app/providers/ThemeProvider'
+import ToastProvider from '@/app/providers/ToastProvider'
+import { router } from '@/app/routes/router'
 
-import QueryProvider from "./context/QueryProvider";
-import { ToastProvider } from "./components/ui/Toast";
-import AdmissionEnquiriesPage from "./pages/AdmissionEnquiriesPage";
-
-const App = () => (
-  <ToastProvider>
+export default function App() {
+  return (
     <QueryProvider>
-      <AdmissionEnquiriesPage />
+      <ThemeProvider>
+        <AuthProvider>
+          <ToastProvider>
+            <RouterProvider router={router} />
+          </ToastProvider>
+        </AuthProvider>
+      </ThemeProvider>
     </QueryProvider>
-  </ToastProvider>
-);
-
-export default App;
+  )
+}

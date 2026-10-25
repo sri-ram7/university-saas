@@ -1,0 +1,57 @@
+openapi: 3.0.0
+
+info:
+  title: University Management SaaS API
+  version: 1.0.0
+  description: Enterprise University ERP Backend
+
+servers:
+  - url: http://localhost:5000
+
+paths:
+
+  /api/auth/register:
+    post:
+      summary: Register User
+      responses:
+        "201":
+          description: User Registered
+
+  /api/auth/login:
+    post:
+      summary: Login User
+      responses:
+        "200":
+          description: Login Successful
+
+  /api/students:
+    get:
+      summary: Get Students
+      responses:
+        "200":
+          description: Student List
+
+    post:
+      summary: Create Student
+      responses:
+        "201":
+          description: Student Created
+
+  /api/departments:
+    get:
+      summary: Get Departments
+
+    post:
+      summary: Create Department
+
+  /api/faculties:
+    get:
+      summary: Get Faculties
+
+  /api/courses:
+    get:
+      summary: Get Courses
+
+  /api/dashboard:
+    get:
+      summary: Dashboard

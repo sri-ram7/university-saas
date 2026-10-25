@@ -1,0 +1,16 @@
+node_modules
+npm-debug.log
+.env
+.env.*
+!.env.example
+.DS_Store
+.git
+.gitignore
+README.md
+dist
+coverage
+.eslintrc.cjs
+.eslint.config.js
+.vscode
+.idea
+*.md

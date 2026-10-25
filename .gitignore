@@ -1,10 +1,38 @@
-node_modules
-.env
-dist
-build
+# Dependencies
+node_modules/
+package-lock.json
 
-# Testing
-backend/coverage/
+# Build
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
 
 # Logs
-backend/logs/
+logs/
+*.log
+npm-debug.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+*.local
+
+# Testing
+coverage/
