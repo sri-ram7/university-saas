@@ -1,0 +1,33 @@
+export const ROUTES = {
+  login: '/login',
+  register: '/register',
+  forgotPassword: '/forgot-password',
+  resetPassword: '/reset-password/:token',
+  verifyEmail: '/verify/:token',
+
+  dashboard: '/dashboard',
+
+  students: '/students',
+  studentDetail: '/students/:id',
+  faculty: '/faculty',
+  facultyDetail: '/faculty/:id',
+  departments: '/departments',
+  departmentDetail: '/departments/:id',
+  courses: '/courses',
+  courseDetail: '/courses/:id',
+
+  programs: '/programs',
+  batches: '/batches',
+  semesters: '/semesters',
+  sections: '/sections',
+  courseOfferings: '/course-offerings',
+  enrollments: '/enrollments',
+  attendance: '/attendance',
+  exams: '/exams',
+  marks: '/marks',
+  results: '/results',
+  notifications: '/notifications',
+  uploads: '/uploads',
+  auditLogs: '/audit-logs',
+  profile: '/profile',
+}

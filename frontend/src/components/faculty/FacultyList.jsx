@@ -1,1 +1,0 @@
-// FacultyList component

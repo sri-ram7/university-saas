@@ -1,1 +1,0 @@
-// CourseCard component

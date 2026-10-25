@@ -1,1 +1,0 @@
-// FacultyCard component

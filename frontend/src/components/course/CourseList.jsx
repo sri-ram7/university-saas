@@ -1,1 +1,0 @@
-// CourseList component

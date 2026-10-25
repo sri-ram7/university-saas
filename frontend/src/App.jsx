@@ -1,15 +1,20 @@
-import { BrowserRouter } from 'react-router-dom'
-import { AuthProvider } from './context/AuthContext'
-import AppRoutes from './routes/AppRoutes'
+import { RouterProvider } from 'react-router-dom'
+import QueryProvider from '@/app/providers/QueryProvider'
+import { AuthProvider } from '@/app/providers/AuthProvider'
+import { ThemeProvider } from '@/app/providers/ThemeProvider'
+import ToastProvider from '@/app/providers/ToastProvider'
+import { router } from '@/app/routes/router'
 
-function App() {
+export default function App() {
   return (
-    <BrowserRouter>
-      <AuthProvider>
-        <AppRoutes />
-      </AuthProvider>
-    </BrowserRouter>
+    <QueryProvider>
+      <ThemeProvider>
+        <AuthProvider>
+          <ToastProvider>
+            <RouterProvider router={router} />
+          </ToastProvider>
+        </AuthProvider>
+      </ThemeProvider>
+    </QueryProvider>
   )
 }
-
-export default App
